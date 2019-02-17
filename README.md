@@ -33,8 +33,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 json-server --watch /Users/pietertheijssen/projects/clientRdw/mock/rdw_mock.json --port 3004
 to call it http://localhost:3004/rdw
 
-
-
 Download elasticsearch, kibana en logstash van de Elasticsearch webpage
 https://www.elastic.co/downloads
 
@@ -54,3 +52,5 @@ Dit draait uren! Maar levert een mooie index
 
 
 Indien er een probleem is met het ophalen van elasticsearch-browser library pak dan de elasticsearch-browser.zip uit in node_modules.
+
+
