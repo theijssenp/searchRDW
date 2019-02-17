@@ -1,0 +1,456 @@
+{
+    "mappings": {
+        "kentekens": {
+            "properties": {
+                "@timestamp": {
+                    "type": "date"
+                },
+                "@version": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "API Gekentekende_voertuigen_assen": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "API Gekentekende_voertuigen_brandstof": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "API Gekentekende_voertuigen_carrosserie": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "API Gekentekende_voertuigen_carrosserie_specifiek": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "API Gekentekende_voertuigen_voertuigklasse": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Aanhangwagen autonoom geremd": {
+                    "type": "long"
+                },
+                "Aanhangwagen middenas geremd": {
+                    "type": "long"
+                },
+                "Aantal cilinders": {
+                    "type": "long"
+                },
+                "Aantal deuren": {
+                    "type": "long"
+                },
+                "Aantal rolstoelplaatsen": {
+                    "type": "long"
+                },
+                "Aantal staanplaatsen": {
+                    "type": "long"
+                },
+                "Aantal wielen": {
+                    "type": "long"
+                },
+                "Aantal zitplaatsen": {
+                    "type": "long"
+                },
+                "Afstand hart koppeling tot achterzijde voertuig": {
+                    "type": "long"
+                },
+                "Afstand voorzijde voertuig tot hart koppeling": {
+                    "type": "long"
+                },
+                "Afwijkende maximum snelheid": {
+                    "type": "long"
+                },
+                "Breedte": {
+                    "type": "long"
+                },
+                "Bruto BPM": {
+                    "type": "long"
+                },
+                "Catalogusprijs": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Cilinderinhoud": {
+                    "type": "long"
+                },
+                "Datum eerste afgifte Nederland": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Datum eerste toelating": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Datum tenaamstelling": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Eerste kleur": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Europese uitvoeringcategorie toevoeging": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Europese voertuigcategorie": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Europese voertuigcategorie toevoeging": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Export indicator": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Handelsbenaming": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Inrichting": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Kenteken": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Laadvermogen": {
+                    "type": "long"
+                },
+                "Lengte": {
+                    "type": "long"
+                },
+                "Massa ledig voertuig": {
+                    "type": "long"
+                },
+                "Massa rijklaar": {
+                    "type": "long"
+                },
+                "Maximale constructiesnelheid (brom/snorfiets)": {
+                    "type": "long"
+                },
+                "Maximum massa samenstelling": {
+                    "type": "long"
+                },
+                "Maximum massa trekken ongeremd": {
+                    "type": "long"
+                },
+                "Maximum ondersteunende snelheid": {
+                    "type": "long"
+                },
+                "Maximum trekken massa geremd": {
+                    "type": "long"
+                },
+                "Merk": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Openstaande terugroepactie indicator": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Oplegger geremd": {
+                    "type": "long"
+                },
+                "Plaats chassisnummer": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Retrofit roetfilter": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Taxi indicator": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Technische max": {
+                    "properties": {
+                        " massa voertuig": {
+                            "type": "long"
+                        }
+                    }
+                },
+                "Toegestane maximum massa voertuig": {
+                    "type": "long"
+                },
+                "Tweede kleur": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Type": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Type gasinstallatie": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Typegoedkeuringsnummer": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Uitvoering": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Variant": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Vermogen (brom/snorfiets)": {
+                    "type": "long"
+                },
+                "Vermogen massarijklaar": {
+                    "type": "long"
+                },
+                "Vervaldatum APK": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Vervaldatum tachograaf": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Voertuigsoort": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Volgnummer wijziging EU typegoedkeuring": {
+                    "type": "long"
+                },
+                "WAM verzekerd": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Wacht op keuren": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "Wielbasis": {
+                    "type": "long"
+                },
+                "Zuinigheidslabel": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "host": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "message": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "path": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "query": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

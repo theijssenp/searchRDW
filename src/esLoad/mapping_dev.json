@@ -1,0 +1,488 @@
+{
+    "settings": {
+        "analysis": {
+            "filter": {
+                "KentekenFilter": {
+                    "type": "edge_ngram",
+                    "min_gram": 1,
+                    "max_gram": 20
+                },
+                "MessageFilter": {
+                    "type": "edge_ngram",
+                    "min_gram": 1,
+                    "max_gram": 20
+                }
+            },
+            "analyzer": {
+                "KentekenAnalyzer": {
+                    "type": "custom",
+                    "tokenizer": "standard",
+                    "filter": [
+                        "lowercase",
+                        "KentekenFilter"
+                    ]
+                },
+                "MessageAnalyzer": {
+                    "type": "custom",
+                    "tokenizer": "standard",
+                    "filter": [
+                        "lowercase",
+                        "MessageFilter"
+                    ]
+                }
+            }
+        }
+    },
+    "Mappings": {
+        "Kentekens": {
+            "Properties": {
+                "@Timestamp": {
+                    "Type": "Date"
+                },
+                "@Version": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "ApiGekentekendeVoertuigenAssen": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "ApiGekentekendeVoertuigenBrandstof": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "ApiGekentekendeVoertuigenCarrosserie": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "ApiGekentekendeVoertuigenCarrosserieSpecifiek": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "ApiGekentekendeVoertuigenVoertuigklasse": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "AanhangwagenAutonoomGeremd": {
+                    "Type": "Long"
+                },
+                "AanhangwagenMiddenasGeremd": {
+                    "Type": "Long"
+                },
+                "AantalCilinders": {
+                    "Type": "Long"
+                },
+                "AantalDeuren": {
+                    "Type": "Long"
+                },
+                "AantalRolstoelplaatsen": {
+                    "Type": "Long"
+                },
+                "AantalStaanplaatsen": {
+                    "Type": "Long"
+                },
+                "AantalWielen": {
+                    "Type": "Long"
+                },
+                "AantalZitplaatsen": {
+                    "Type": "Long"
+                },
+                "AfstandHartKoppelingTotAchterzijdeVoertuig": {
+                    "Type": "Long"
+                },
+                "AfstandVoorzijdeVoertuigTotHartKoppeling": {
+                    "Type": "Long"
+                },
+                "AfwijkendeMaximumSnelheid": {
+                    "Type": "Long"
+                },
+                "Breedte": {
+                    "Type": "Long"
+                },
+                "BrutoBpm": {
+                    "Type": "Long"
+                },
+                "Catalogusprijs": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Cilinderinhoud": {
+                    "Type": "Long"
+                },
+                "DatumEersteAfgifteNederland": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "DatumEersteToelating": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "DatumTenaamstelling": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "EersteKleur": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "EuropeseUitvoeringcategorieToevoeging": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "EuropeseVoertuigcategorie": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "EuropeseVoertuigcategorieToevoeging": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "ExportIndicator": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Handelsbenaming": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Inrichting": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Kentekentype": {
+                    "Properties": {
+                        "Kenteken": {
+                            "Type": "Text",
+                            "Analyzer": "Kentekenanalyzer"
+                        }
+                    }
+                },
+                "Laadvermogen": {
+                    "Type": "Long"
+                },
+                "Lengte": {
+                    "Type": "Long"
+                },
+                "MassaLedigVoertuig": {
+                    "Type": "Long"
+                },
+                "MassaRijklaar": {
+                    "Type": "Long"
+                },
+                "MaximaleConstructiesnelheidBromSnorfiets": {
+                    "Type": "Long"
+                },
+                "MaximumMassaSamenstelling": {
+                    "Type": "Long"
+                },
+                "MaximumMassaTrekkenOngeremd": {
+                    "Type": "Long"
+                },
+                "MaximumOndersteunendeSnelheid": {
+                    "Type": "Long"
+                },
+                "MaximumTrekkenMassaGeremd": {
+                    "Type": "Long"
+                },
+                "Merk": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "OpenstaandeTerugroepactieIndicator": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "OpleggerGeremd": {
+                    "Type": "Long"
+                },
+                "PlaatsChassisnummer": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "RetrofitRoetfilter": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "TaxiIndicator": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "TechnischeMax": {
+                    "Properties": {
+                        "MassaVoertuig": {
+                            "Type": "Long"
+                        }
+                    }
+                },
+                "ToegestaneMaximumMassaVoertuig": {
+                    "Type": "Long"
+                },
+                "TweedeKleur": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Type": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "TypeGasinstallatie": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Typegoedkeuringsnummer": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Uitvoering": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Variant": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "VermogenBromSnorfiets": {
+                    "Type": "Long"
+                },
+                "VermogenMassarijklaar": {
+                    "Type": "Long"
+                },
+                "VervaldatumApk": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "VervaldatumTachograaf": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Voertuigsoort": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "VolgnummerWijzigingEuTypegoedkeuring": {
+                    "Type": "Long"
+                },
+                "WamVerzekerd": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "WachtOpKeuren": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Wielbasis": {
+                    "Type": "Long"
+                },
+                "Zuinigheidslabel": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Host": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Messagetype": {
+                    "Properties": {
+                        "Message": {
+                            "Type": "Text",
+                            "Analyzer": "Messageanalyzer"
+                        }
+                    }
+                },
+                "Path": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                },
+                "Query": {
+                    "Type": "Text",
+                    "Fields": {
+                        "Keyword": {
+                            "Type": "Keyword",
+                            "Ignore_Above": 256
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

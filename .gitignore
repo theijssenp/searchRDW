@@ -42,3 +42,18 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Project files
+*/kibana-6.6.0-darwin-x86_64/*
+*/elasticsearch-6.6.0/*
+*/elasticsearch-6.6.0_old/*
+*/kibana-6.6.0-linux-x86_64/*
+*/logstash-6.6.0/*
+*/rdw.csv
+*/Open_Data_RDW__Gekentekende_voertuigen.csv
+*/elasticsearch-6.6.0.tar
+*/kibana-6.6.0-darwin-x86_64.tar
+src/esLoad/Open_Data_RDW__Gekentekende_voertuigen.csv
+src/esLoad/rdw.csv
+src/esLoad/kibana-6.6.0-darwin-x86_64.tar
+src/esLoad/elasticsearch-6.6.0.tar
