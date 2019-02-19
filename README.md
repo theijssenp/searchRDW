@@ -41,6 +41,12 @@ https://opendata.rdw.nl/Voertuigen/Open-Data-RDW-Gekentekende_voertuigen/m9d7-eb
 
 Pak elasticsearch, kibana en logstash uit
 
+Pas in de elasticsearch config directory de elasticsearch.yml file aan door inderin de twee regels toe te voegen:
+
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+
+
 
 Start elasticsearch en kibana.
 
@@ -52,5 +58,4 @@ Dit draait uren! Maar levert een mooie index
 
 
 Indien er een probleem is met het ophalen van elasticsearch-browser library pak dan de elasticsearch-browser.zip uit in node_modules.
-
 
