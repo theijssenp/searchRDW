@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RdwInfo } from 'src/app/RdwInfo.model';
 import { RdwsearchService } from 'src/app/rdwsearch.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-kenteken-details',
@@ -20,6 +20,10 @@ export class KentekenDetailsComponent implements OnInit {
   ngOnInit() {
     this.kenteken = this.route.snapshot.params['kenteken'];
     this.searchRdw(this.kenteken);
+    this.route.params.subscribe(
+      (params: Params) => {
+      this.kenteken = params['kenteken'];
+      }
+    );
   }
-
 }

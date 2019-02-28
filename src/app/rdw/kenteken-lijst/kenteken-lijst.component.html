@@ -1,6 +1,10 @@
 <div *ngIf="kenteken">
   <div>
-    <label>Kenteken: </label> <li>{{ kenteken.Kenteken }}</li>
+    <ul>
+        <a routerLink="/details/{{kenteken.Kenteken}}">
+          {{ kenteken.Kenteken }}
+        </a>
+    </ul>
   </div>
   <div>
     <label>Merk: </label> {{kenteken.Merk}}
@@ -20,6 +24,5 @@
   <div>
     <label>Datum eerste toelating: </label> {{ kenteken.DatumEersteToelating }}
   </div>
-
   <hr />
 </div>

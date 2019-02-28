@@ -1,46 +1,149 @@
-<hr>
 <div *ngFor='let rdwinfo of rdwinfos' style="text-align:center">
-  <h2> {{ rdwinfo.kenteken }} </h2>
-  <h3> {{ rdwinfo.merk }} </h3>
-  <h3> {{ rdwinfo.handelsbenaming }} </h3>
-  <h5> aantal_cilinders: {{rdwinfo.aantal_cilinders  }}</h5>
-  <h5> aantal_deuren: {{rdwinfo.aantal_deuren  }}</h5>
-  <h5> aantal_wielen: {{rdwinfo.aantal_wielen  }}</h5>
-  <h5> aantal_zitplaatsen: {{rdwinfo.aantal_zitplaatsen  }}</h5>
-  <h5> api_gekentekende_voertuigen_assen: {{rdwinfo.api_gekentekende_voertuigen_assen  }}</h5>
+  <h1> {{ rdwinfo.kenteken }} </h1>
+  <table>
+    <tr>
+      <th>Eigenschap</th>
+      <th>Waarde</th>
+    </tr>
+    <tr>
+      <td>Merk</td>
+      <td>{{ rdwinfo.merk }}</td>
+    </tr>
+    <tr>
+      <td>Handelsbenaming</td>
+      <td>{{ rdwinfo.handelsbenaming }}</td>
+    </tr>
+    <tr>
+      <td>Inrichting</td>
+      <td>{{rdwinfo.inrichting }}</td>
+    </tr>
+    <tr>
+      <td>Voertuigsoort</td>
+      <td>{{rdwinfo.voertuigsoort }}</td>
+    </tr>
+    <tr>
+      <td>Eerste kleur</td>
+      <td>{{rdwinfo.eerste_kleur }}</td>
+    </tr>
+    <tr>
+      <td>Tweede kleur</td>
+      <td>{{rdwinfo.tweede_kleur }}</td>
+    </tr>
+    <tr>
+      <td>Bruto BPM</td>
+      <td>{{rdwinfo.bruto_bpm }}</td>
+    </tr>
+    <tr>
+      <td>Cilinderinhoud</td>
+      <td>{{rdwinfo.cilinderinhoud }}</td>
+    </tr>
+    <tr>
+      <td>Datum tenaamstelling</td>
+      <td>{{rdwinfo.datum_tenaamstelling }}</td>
+    </tr>
+    <tr>
+      <td>Datum eerste afgifte Nederland</td>
+      <td>{{rdwinfo.datum_eerste_afgifte_nederland }}</td>
+    </tr>
+    <tr>
+      <td>Datum eerste toelating</td>
+      <td>{{rdwinfo.datum_eerste_toelating }}</td>
+    </tr>
+    <tr>
+      <td>Vervaldatum APK</td>
+      <td>{{rdwinfo.vervaldatum_apk }}</td>
+    </tr>
+    <tr>
+      <td>Aantal cilinders</td>
+      <td>{{rdwinfo.aantal_cilinders }}</td>
+    </tr>
+    <tr>
+      <td>Aantal deuren</td>
+      <td>{{rdwinfo.aantal_deuren }}</td>
+    </tr>
+    <tr>
+      <td>Aantal wielen</td>
+      <td>{{rdwinfo.aantal_wielen }}</td>
+    </tr>
+    <tr>
+      <td>Aantal zitplaatsen</td>
+      <td>{{rdwinfo.aantal_zitplaatsen }}</td>
+    </tr>
+    <tr>
+      <td>Europese voertuigcategorie</td>
+      <td>{{rdwinfo.europese_voertuigcategorie }}</td>
+    </tr>
+    <tr>
+      <td>Export indicator</td>
+      <td>{{rdwinfo.export_indicator }}</td>
+    </tr>
+    <tr>
+      <td>Massa ledig voertuig</td>
+      <td>{{rdwinfo.massa_ledig_voertuig }}</td>
+    </tr>
+    <tr>
+      <td>Massa rijklaar</td>
+      <td>{{rdwinfo.massa_rijklaar }}</td>
+    </tr>
+    <tr>
+      <td>Maximum massa samenstelling</td>
+      <td>{{rdwinfo.maximum_massa_samenstelling }}</td>
+    </tr>
+    <tr>
+      <td>Maximum massa trekken ongeremd</td>
+      <td>{{rdwinfo.maximum_massa_trekken_ongeremd }}</td>
+    </tr>
+    <tr>
+      <td>Maximum trekken massa geremd</td>
+      <td>{{rdwinfo.maximum_trekken_massa_geremd }}</td>
+    </tr>
+
+    <tr>
+      <td>Openstaande terugroepactie indicator</td>
+      <td>{{rdwinfo.openstaande_terugroepactie_indicator }}</td>
+    </tr>
+    <tr>
+      <td>Plaats chassisnummer</td>
+      <td>{{rdwinfo.plaats_chassisnummer }}</td>
+    </tr>
+    <tr>
+      <td>Retrofit roetfilter</td>
+      <td>{{rdwinfo.retrofit_roetfilter }}</td>
+    </tr>
+    <tr>
+      <td>Taxi indicator</td>
+      <td>{{rdwinfo.taxi_indicator }}</td>
+    </tr>
+    <tr>
+      <td>Technische max massa voertuig</td>
+      <td>{{rdwinfo.technische_max_massa_voertuig }}</td>
+    </tr>
+    <tr>
+      <td>Toegestane maximum massa voertuig</td>
+      <td>{{rdwinfo.toegestane_maximum_massa_voertuig }}</td>
+    </tr>
+    <tr>
+      <td>Vermogen massarijklaar</td>
+      <td>{{rdwinfo.vermogen_massarijklaar }}</td>
+    </tr>
+    <tr>
+      <td>Wacht op keuren</td>
+      <td>{{rdwinfo.wacht_op_keuren }}</td>
+    </tr>
+    <tr>
+      <td>Wam verzekerd</td>
+      <td>{{rdwinfo.wam_verzekerd }}</td>
+    </tr>
+    <tr>
+      <td>Wielbasis</td>
+      <td>{{rdwinfo.wielbasis }}</td>
+    </tr>
+  </table>
+
+  <!-- <h5> api_gekentekende_voertuigen_assen: {{rdwinfo.api_gekentekende_voertuigen_assen  }}</h5>
   <h5> api_gekentekende_voertuigen_brandstof: {{rdwinfo.api_gekentekende_voertuigen_brandstof  }}</h5>
   <h5> api_gekentekende_voertuigen_carrosserie: {{rdwinfo.api_gekentekende_voertuigen_carrosserie  }}</h5>
   <h5> api_gekentekende_voertuigen_carrosserie_specifiek:
     {{rdwinfo.api_gekentekende_voertuigen_carrosserie_specifiek  }}</h5>
-  <h5> api_gekentekende_voertuigen_voertuigklasse: {{rdwinfo.api_gekentekende_voertuigen_voertuigklasse  }}</h5>
-  <h5> bruto_bpm: {{rdwinfo.bruto_bpm  }}</h5>
-  <h5> cilinderinhoud: {{rdwinfo.cilinderinhoud  }}</h5>
-  <h5> datum_eerste_afgifte_nederland: {{rdwinfo.datum_eerste_afgifte_nederland  }}</h5>
-  <h5> datum_eerste_toelating: {{rdwinfo.datum_eerste_toelating  }}</h5>
-  <h5> datum_tenaamstelling: {{rdwinfo.datum_tenaamstelling  }}</h5>
-  <h5> eerste_kleur: {{rdwinfo.eerste_kleur  }}</h5>
-  <h5> europese_voertuigcategorie: {{rdwinfo.europese_voertuigcategorie  }}</h5>
-  <h5> export_indicator: {{rdwinfo.export_indicator  }}</h5>
-  <h5> handelsbenaming: {{rdwinfo.handelsbenaming  }}</h5>
-  <h5> inrichting: {{rdwinfo.inrichting  }}</h5>
-  <h5> kenteken: {{rdwinfo.kenteken  }}</h5>
-  <h5> massa_ledig_voertuig: {{rdwinfo.massa_ledig_voertuig  }}</h5>
-  <h5> massa_rijklaar: {{rdwinfo.massa_rijklaar  }}</h5>
-  <h5> maximum_massa_samenstelling: {{rdwinfo.maximum_massa_samenstelling  }}</h5>
-  <h5> maximum_massa_trekken_ongeremd: {{rdwinfo.maximum_massa_trekken_ongeremd  }}</h5>
-  <h5> maximum_trekken_massa_geremd: {{rdwinfo.maximum_trekken_massa_geremd  }}</h5>
-  <h5> merk: {{rdwinfo.merk  }}</h5>
-  <h5> openstaande_terugroepactie_indicator: {{rdwinfo.openstaande_terugroepactie_indicator  }}</h5>
-  <h5> plaats_chassisnummer: {{rdwinfo.plaats_chassisnummer  }}</h5>
-  <h5> retrofit_roetfilter: {{rdwinfo.retrofit_roetfilter  }}</h5>
-  <h5> taxi_indicator: {{rdwinfo.taxi_indicator  }}</h5>
-  <h5> technische_max_massa_voertuig: {{rdwinfo.technische_max_massa_voertuig  }}</h5>
-  <h5> toegestane_maximum_massa_voertuig: {{rdwinfo.toegestane_maximum_massa_voertuig  }}</h5>
-  <h5> tweede_kleur: {{rdwinfo.tweede_kleur  }}</h5>
-  <h5> vermogen_massarijklaar: {{rdwinfo.vermogen_massarijklaar  }}</h5>
-  <h5> vervaldatum_apk: {{rdwinfo.vervaldatum_apk  }}</h5>
-  <h5> voertuigsoort: {{rdwinfo.voertuigsoort  }}</h5>
-  <h5> wacht_op_keuren: {{rdwinfo.wacht_op_keuren  }}</h5>
-  <h5> wam_verzekerd: {{rdwinfo.wam_verzekerd  }}</h5>
-  <h5> wielbasis: {{rdwinfo.wielbasis  }}</h5>
+  <h5> api_gekentekende_voertuigen_voertuigklasse: {{rdwinfo.api_gekentekende_voertuigen_voertuigklasse  }}</h5> -->
 </div>

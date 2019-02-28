@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Kenteken } from '../kenteken.interface';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'kenteken-lijst',
@@ -10,7 +11,7 @@ export class KentekenLijstComponent {
 
   @Input() kenteken: Kenteken;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
 
 }
