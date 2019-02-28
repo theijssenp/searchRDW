@@ -4,18 +4,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SearchComponent } from './rdw/search/search.component';
+import { KentekenLijstComponent } from './rdw/kenteken-lijst/kenteken-lijst.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RdwsearchService } from './rdwsearch.service';
 import { KentekenDetailsComponent } from './rdw/kenteken-details/kenteken-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent, KentekenDetailsComponent,
-    SearchComponent
+    AppComponent, KentekenLijstComponent,
+    SearchComponent,
+    KentekenDetailsComponent
   ],
   imports: [
     BrowserModule, FormsModule, ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule, HttpClientModule
   ],
-  providers: [],
+  providers: [RdwsearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

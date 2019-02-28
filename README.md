@@ -45,7 +45,7 @@ Pas in de elasticsearch config directory de elasticsearch.yml file aan door inde
 
 http.cors.enabled: true
 http.cors.allow-origin: "*"
-
+cluster.routing.allocation.disk.threshold_enabled: false
 
 
 Start elasticsearch en kibana.
