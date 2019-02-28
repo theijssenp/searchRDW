@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Kenteken } from '../kenteken.interface';
 import { RdwInfo } from 'src/app/RdwInfo.model';
 import { RdwsearchService } from 'src/app/rdwsearch.service';
 import { ActivatedRoute } from '@angular/router';
