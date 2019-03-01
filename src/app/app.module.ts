@@ -8,16 +8,21 @@ import { KentekenLijstComponent } from './rdw/kenteken-lijst/kenteken-lijst.comp
 import { HttpClientModule } from '@angular/common/http';
 import { RdwsearchService } from './rdwsearch.service';
 import { KentekenDetailsComponent } from './rdw/kenteken-details/kenteken-details.component';
+import { HeaderComponent } from './rdw/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent, KentekenLijstComponent,
     SearchComponent,
-    KentekenDetailsComponent
+    KentekenDetailsComponent,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule, FormsModule, ReactiveFormsModule,
-    AppRoutingModule, HttpClientModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [RdwsearchService],
   bootstrap: [AppComponent]

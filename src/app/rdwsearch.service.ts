@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { RdwInfo } from './RdwInfo.model';
+import { RdwInfo } from './rdwinfo.model';
 @Injectable({
   providedIn: 'root'
 })

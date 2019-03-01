@@ -1,6 +1,6 @@
 # ClientRdw
 
-This project is not completed.
+This project is in working order but not completed.
 
 Generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
@@ -58,4 +58,6 @@ Dit draait uren! Maar levert een mooie index
 
 
 Indien er een probleem is met het ophalen van elasticsearch-browser library pak dan de elasticsearch-browser.zip uit in node_modules.
+https://grokonez.com/frontend/angular/angular-6/angular-6-elasticsearch-example-quick-start-how-to-add-elasticsearch-js
+
 
