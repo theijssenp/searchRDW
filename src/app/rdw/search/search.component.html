@@ -1,9 +1,17 @@
-<div style="margin-top:20px">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
   <input type="text" (keyup)="search($event)" placeholder="enter search key" class="input">
-  <div *ngFor="let kentekenSource of KentekenSources" style="margin-top:20px">
+  <div *ngFor="let kentekenSource of KentekenSources">
     <kenteken-lijst [kenteken]='kentekenSource._source'></kenteken-lijst>
   </div>
-  <div *ngIf="KentekenSources?.length < 1" style="margin-top:20px">
-    <p>Nothing found!</p>
+  <div *ngIf="KentekenSources?.length < 1">
+    <hr>
+    <p>No hits yet!</p>
   </div>
 </div>

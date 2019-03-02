@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { RdwInfo } from './rdwinfo.model';
+import { rdwinfo } from './rdwinfo.model';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -10,6 +11,6 @@ export class RdwsearchService {
 
 
   getRdwInfo(kenteken: String) {
-    return this._http.get<RdwInfo[]>(this.apiUrl+'%27'+kenteken+'%27');
+    return this._http.get<rdwinfo[]>(this.apiUrl+'%27'+kenteken+'%27');
   }
 }

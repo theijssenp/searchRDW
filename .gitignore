@@ -57,3 +57,4 @@ src/esLoad/Open_Data_RDW__Gekentekende_voertuigen.csv
 src/esLoad/rdw.csv
 src/esLoad/kibana-6.6.0-darwin-x86_64.tar
 src/esLoad/elasticsearch-6.6.0.tar
+bootstrap.zip

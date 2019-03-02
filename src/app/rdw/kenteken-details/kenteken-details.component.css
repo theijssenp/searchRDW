@@ -1,3 +1,11 @@
+
+h1 {
+    background-color: yellow;
+    align-self: center;
+    text-align: center;
+    width: 140px;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -13,3 +21,4 @@ table {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+

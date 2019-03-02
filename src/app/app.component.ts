@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RdwInfo } from './RdwInfo.model';
+import { rdwinfo } from './rdwinfo.model';
 import { RdwsearchService } from './rdwsearch.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { RdwsearchService } from './rdwsearch.service';
 })
 export class AppComponent {
   title = 'RDWSearch';
-  rdwinfos: RdwInfo[];
+  rdwinfos: rdwinfo[];
 
 constructor(private rdwInfoService: RdwsearchService){}
 

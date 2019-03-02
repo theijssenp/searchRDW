@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RdwInfo } from 'src/app/RdwInfo.model';
+import { rdwinfo } from 'src/app/rdwinfo.model';
 import { RdwsearchService } from 'src/app/rdwsearch.service';
 import { ActivatedRoute, Params } from '@angular/router';
 
@@ -10,7 +10,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 export class KentekenDetailsComponent implements OnInit {
   kenteken: String;
-  rdwinfos: RdwInfo[];
+  rdwinfos: rdwinfo[];
   constructor(private rdwInfoService: RdwsearchService, private route: ActivatedRoute) { }
 
   searchRdw(kenteken: String) {

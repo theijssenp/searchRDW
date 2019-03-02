@@ -1,4 +1,4 @@
-export class RdwInfo {
+export class rdwinfo {
     aantal_cilinders:                                  string;
     aantal_deuren:                                     string;
     aantal_wielen:                                     string;
